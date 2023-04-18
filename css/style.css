@@ -4,10 +4,13 @@
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+/*-----Index------*/
 body {
     background: #080808;
     color: #fff;
+    /* background-image: url(/src/fondo.jpg);
+    background-size: cover;
+    background-position: center; */
 }
 
 #header {
@@ -16,7 +19,8 @@ body {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px;
+
 }
 
 nav {
@@ -30,23 +34,24 @@ nav {
     width: 140px;
 }
 
-nav ul li {
+nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a {
+nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
 }
 
 nav ul li a::after {
-    content: "";
-    background: #ffffff;
-    width: 0;
+    content: '';
+    width: 0%;
     height: 3px;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,9 +72,9 @@ nav ul li a:hover::after {
     font-size: 60px;
 }
 
-/*-----About------*/
+/*-----AboutMe------*/
 #about {
-    padding: 80px;
+    padding: 80px 0;
     color: #ababab;
 }
 
@@ -104,6 +109,7 @@ nav ul li a:hover::after {
 }
 
 .tabLinks {
+    display: inline-block;
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -120,6 +126,7 @@ nav ul li a:hover::after {
     left: 0;
     bottom: -8p;
     transition: 0.5s;
+
 }
 
 .tabLinks.activeLink::after {
